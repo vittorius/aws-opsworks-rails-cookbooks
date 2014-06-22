@@ -1,3 +1,5 @@
+.idea
+
 .vagrant
 /cookbooks
 
@@ -7,3 +9,6 @@ bin/*
 
 .kitchen/
 .kitchen.local.yml
+
+.ruby-version
+.ruby-gemset
