@@ -17,7 +17,7 @@
   <%= passenger_handler -%>Env <%= @params[:rails_env] %>
 
   <Directory <%= @params[:docroot] %>>
-    Options FollowSymLinks Indexes
+    Options FollowSymLinks
     AllowOverride None
     Order allow,deny
     Allow from all
@@ -88,7 +88,7 @@
   <%= passenger_handler -%>Env <%= @params[:rails_env] %>
 
   <Directory <%= @params[:docroot] %>>
-    Options FollowSymLinks Indexes
+    Options FollowSymLinks
     AllowOverride All
     Order allow,deny
     Allow from all
