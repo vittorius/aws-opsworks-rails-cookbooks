@@ -17,7 +17,7 @@
   <%= passenger_handler -%>Env <%= @params[:rails_env] %>
 
   <Directory <%= @params[:docroot] %>>
-    Options FollowSymLinks
+    Options FollowSymLinks Indexes
     AllowOverride None
     Order allow,deny
     Allow from all
