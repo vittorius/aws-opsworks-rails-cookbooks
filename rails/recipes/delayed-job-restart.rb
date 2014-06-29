@@ -7,7 +7,7 @@ node[:deploy].each do |application, deploy|
   execute 'delayed_job restart' do
     cwd current_path
     user 'deploy'
-    command 'bin/delayed_job restart'
+    command 'bundle exec bin/delayed_job start'
     environment 'RAILS_ENV' => rails_env
   end
 end
